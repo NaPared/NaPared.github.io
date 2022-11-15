@@ -137,6 +137,7 @@
 
     .projects-container{
         height: 100vh;
+        margin-bottom: 1rem;
     }
 
     .project-text{
