@@ -144,6 +144,9 @@
         max-height: 25%;
     }
 
+    .socials-mobile, .newark-mobile-img{
+        display: none;
+    }
 
     .projects-container{
         margin-top: 2%;
