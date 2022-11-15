@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='tic-tac-toe.js' defer></script>
+    <link rel="stylesheet" href="tic-tac-toe.css"/>
+    <title>Tic-Tac-Toe Game</title>
+</head>
+<body id="body">
+    <header class="header">
+        <h1 class="header-text">Tic-Tac-Toe Game</h1>
+        <h3 class="background-change">
+            <button class="color-button1" onclick="gfg_Run1()">Light Blue</button>
+            <button class="color-button2" onclick="gfg_Run2()">Light Green</button>
+            <button class="color-button3" onclick="gfg_Run3()">Salmon</button>
+            <button class="color-button4" onclick="gfg_Run4()">Light Seagreen</button>
+        </h3>
+
+    </header>
+    <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+    </div>
+    <div class="winning-message" id="winningMessage">
+        <div data-winning-message-text></div>
+        <button id="restartButton">Restart</button>
+    </div>
+    
+
+    <script>
+        function changeColor(color){
+            document.body.style.background = color;
+        }
+        function gfg_Run1(){
+            changeColor('lightblue');
+        }
+    </script>
+    <script>
+        function changeColor(color){
+            document.body.style.background = color;
+        }
+        function gfg_Run2(){
+            changeColor('lightgreen');
+        }
+    </script>
+    <script>
+        function changeColor(color){
+            document.body.style.background = color;
+        }
+        function gfg_Run3(){
+            changeColor('salmon');
+        }
+    </script>
+    <script>
+        function changeColor(color){
+            document.body.style.background = color;
+        }
+        function gfg_Run4(){
+            changeColor('lightseagreen');
+        }
+    </script>
+
+</body>
+</html>

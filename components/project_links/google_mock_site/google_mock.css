@@ -1,0 +1,238 @@
+body{
+    box-sizing: border-box;
+    resize: both;
+    margin: 0%;
+    padding: 0%;
+}
+
+div{
+    display: block;
+}
+
+.left-links{
+    margin-left: 1rem;
+}
+
+.about{
+    padding-right: 1rem;
+}
+
+.right-links{
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 95rem;
+    min-width: auto;
+}
+
+a{
+    font-family: Roboto, arial, sans-serif; 
+    font-size: 14px;
+    color: #222; 
+    text-decoration: none; 
+    padding: 5px;
+    display: inline-block;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+.about:hover, .store:hover, .gmail:hover, .images:hover{
+    text-decoration: underline;
+}
+
+.container{
+    margin-top: 13.15rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    margin-left: 48.5rem;
+}
+
+.image-container{
+    margin-left: 3rem;
+    padding-top: .5rem;
+}
+
+.search-bar{
+    margin-left: -7.5rem;
+    margin-top: 1rem;
+    height: 70px;
+    width: 43rem;
+    display: flex;
+}
+
+.magnifying-glass{
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    right: 35.5rem;
+    font-size: 18px;
+    color: gray;
+    opacity: 0.7;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.search-input{
+    margin-top: 7px;
+    margin-left: 2rem;
+    width: 35rem;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    border-width: 0.25px;
+    border-color: rgb(219, 219, 219);
+    border-top-color: rgba(230, 230, 230, 0.3);
+    text-indent: 25px;
+    font-size: 16px;
+    outline: none;
+    position: absolute;
+}
+
+.search-input:hover{
+    border-bottom-style: rgb(150, 150, 150);
+}
+
+.microphone{
+    height: 20px;
+    margin-top: 1.3rem;
+    position: relative;
+    margin-left: 36.25rem;
+    cursor: pointer;
+}
+
+.buttons{
+    margin-left: 2rem;
+}
+
+.container-button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 36px;
+    line-height: 27px;
+    font-family: Roboto, arial, sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    min-width: 54px;
+    text-align: center;
+    user-select: none;
+}
+.container-button:hover{
+    border: 1px solid rgb(220, 220, 220);
+}
+
+.container-button span{
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+.container-button::before, .container-button::after{
+    content: '';
+    position: absolute;
+    margin-top: 11px 4px;
+    margin-left: -0.3rem;
+    opacity: 0;
+    -webkit-transition: .4s,opacity .6s;
+    -moz-transition: .4s,opacity .6s;
+    -o-transition: .4s,opacity .6s;
+    transition: .4s,opacity .6s;
+}
+
+.container-button::before{
+    content: attr(data-hover);
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+}
+
+
+.container-button:hover span,
+.container-button:active span{
+    opacity: 0;
+    -webkit-transform: scale(0.3);
+    -moz-transform: scale(0.3);
+    -ms-transform: scale(0.3);
+    -o-transform: scale(0.3);
+    transform: scale(0.3);
+}
+
+.container-button:hover::before, .container-button:active::after{
+    opacity: 1;
+    -webkit-transform: translate(0,0);
+    -moz-transform: translate(0,0);
+    -ms-transform: translate(0,0);
+    -o-transform: translate(0,0);
+    transform: translate(0,0);
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+.footer-links{
+    margin-top: -3.5rem;
+    margin-left: -.13rem;
+}
+
+.bottom-right-links{
+    display: inline-block;
+    flex-grow: 1;
+    margin-left: 82.5rem;
+    min-width: auto;
+}
+
+.privacy, .terms, .settings,.advertising, .business , .how{
+    margin-left: 1rem;
+    color: #70757a;
+}
+
+a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sign-in{
+    background-color: #1a73e8;
+    border: none;
+    outline: none;
+    padding: 8px 14px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    font-family: 'arial', sans-serif;
+    position: relative;
+    margin-left: 3rem;
+    width: 50px;
+}
+
+.dots{
+    height: 15px;
+    display: inline-flex;
+    position: absolute;
+    margin-top: 1.5rem;
+    margin-left: 1.3rem;
+    opacity: 0.7;
+    margin-right: 1rem;
+}
+
+.bottom-link-carbon{
+    position: relative;
+    margin-top: 25rem;
+    margin-left: 45%;
+}
+
+.leaf{
+    height: 13px;
+    width: 13px;
+}
